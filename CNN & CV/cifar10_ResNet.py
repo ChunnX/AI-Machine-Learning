@@ -35,7 +35,7 @@ train_load = DataLoader(dataset=train_data, batch_size=batch_size, shuffle=True)
 test_load = DataLoader(dataset=test_data, batch_size=batch_size, shuffle=True)
 
 # 使用ResNet50
-model = torchvision.models.resnet50(pretrained=False)
+# model = torchvision.models.resnet50(pretrained=False)
 model = torchvision.models.resnet50(weights=None)
 
 
